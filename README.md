@@ -8,7 +8,7 @@ This is a responsive email signup form built with HTML and CSS. The form allows 
 
 ## Live Demo
 
-* You can check out the live demo of the project [here]().
+* You can check out the live demo of the project [here](https://premkrrajbhar.github.io/signup-form-page/).
 
 ## Table of Contents
 1. [Features](#features)
