@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 215, 224);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgb(59, 92, 160);
+    background-color: rgb(59, 92, 160);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container:hover {
+    box-shadow: 2px 2px 20px black;
+    transform: translateY(-5px);
+}
+
+.container h2 {
+    color: white;
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+.container hr {
+    width: 80px;
+    height: 1px;
+    background-color: white;
+    opacity: 0.8;
+    margin: -25px auto 0;
+}
+
+.container p {
+    color: white;
+    font-size: 18px;
+    opacity: 0.8;
+    margin: 30px;
+}
+
+.container form input {
+    margin: 8px 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(35, 55, 96);
+    border: none;
+    outline: none;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.container form input:hover {
+    border: 1px solid rgb(35, 55, 96);
+    box-shadow: 2px 2px 20px rgb(35, 55, 96);
+}
+
+.container form input::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.container form button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    border: 1px solid rgba(226, 223, 223, 0.6);
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container form button:hover {
+    background-color: rgb(35, 55, 96);
+    border: 1px solid rgb(35, 55, 96);
+    box-shadow: 5px 5px 10px rgb(35, 55, 96);
+}
+
+/*  Media Queries for different screen sizes */
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .container form input {
+        width: 80%;
+    }
+
+    .container form button {
+        padding: 13px 28px;
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 275px) {
+    .container {
+        width: 70%;
+        height: auto;
+
+    }
+    .container form input {
+        width: 60%;
+
+    }
+
+    .container form button {
+        font-size: 0.75rem;
+        padding: 7px 15px;
+    }
+
+    .container h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 30px;
+        margin-bottom: 20px;  
+    }
+
+    .container hr {
+        width: 60px;
+        margin: 2px auto 0;
+    }
+}
+
+
+
+
